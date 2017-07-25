@@ -69,3 +69,5 @@ function md() {
 function xtree {
     find ${1:-.} -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
 }
+
+export PS1='\[\e[32;1m\][\[\e[37m\]\u\[\e[32m\]@\[\e[37m\]mosajco-workspace\[\e[32m\]] \[\e[34m\]\w\[\e[33m\] \[\e[32m\]\n\$\[\e[0;0m\] '

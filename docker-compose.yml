@@ -127,6 +127,8 @@ services:
       networks:
         - frontend
         - backend
+      extra_hosts:
+        - "lounge.local:127.0.1.1"
 
 ### Blackfire Container #################################
 

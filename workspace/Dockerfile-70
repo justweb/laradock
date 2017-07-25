@@ -531,6 +531,13 @@ RUN if [ ${INSTALL_SYMFONY} = true ]; then \
 ;fi
 
 #####################################
+# IMAGICK e INTL:
+#####################################
+USER root
+RUN apt-get update -yqq \
+    && apt-get install -y php7.0-imagick php7.0-intl
+
+#####################################
 # Image optimizers:
 #####################################
 USER root
